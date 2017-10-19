@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    >
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:background="#DEDEDE"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <com.ytt.bargraph.BarGraphView
+            android:id="@+id/bargraphview"
+            app:bar_graph_bg_color="#ff6547"
+            app:bar_graph_x_textSize="15sp"
+            app:bar_graph_y_textSize="14sp"
+            app:bar_graph_width="20dp"
+            app:bar_graph_distance="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </HorizontalScrollView>
+    <Button
+        android:id="@+id/start_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始动画"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/bar_inttext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:hint="请输入数字"/>
+        <Button
+            android:id="@+id/barwidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="柱状图宽度"/>
+        <Button
+            android:id="@+id/bardistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="柱状图间隔"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/textSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入文字大小"/>
+        <Button
+            android:id="@+id/set_x_textSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置X轴文字"/>
+
+        <Button
+            android:id="@+id/set_Y_textSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置Y轴文字" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一组数据"/>
+
+        <Button
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="两组数据" />
+        <Button
+            android:id="@+id/third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="三组数据"/>
+
+        <Button
+            android:id="@+id/fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="四组数据" />
+    </LinearLayout>
+
+</LinearLayout>

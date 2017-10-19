@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BarGraphView">
+        <!--柱状图的颜色-->
+        <attr name="bar_graph_bg_color" format="color" />
+        <!--柱状图之间的间隔-->
+        <attr name="bar_graph_distance" format="dimension" />
+        <!--柱状图的宽度-->
+        <attr name="bar_graph_width" format="dimension" />
+        <!-- xy轴线和文字的颜色-->
+        <attr name="bar_graph_xy_line_text_color" format="color" />
+        <!--x轴文字的大小-->
+        <attr name="bar_graph_x_textSize" format="dimension" />
+        <!--y轴文字大小-->
+        <attr name="bar_graph_y_textSize" format="dimension" />
+        <!--动画播放时长-->
+        <attr name="bar_graph_animation_duration" format="integer" />
+        <!--是否显示X轴的文字-->
+        <attr name="bar_graph_isShow_X_text" format="boolean"/>
+        <!--是否显示Y轴的文字-->
+        <attr name="bar_graph_isShow_Y_text" format="boolean"/>
+
+    </declare-styleable>
+</resources>
